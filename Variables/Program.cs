@@ -6,47 +6,43 @@ namespace Variables
     {
         static void Main(string[] args)
         {
-            //Value Type
-            // Declaration { <datatype> - <identifire> }
-            int num;
+            //var
+            var s1 = "Younis";
 
-            // 2. Assignment { <identifire> = <Value> }
-            num = 7;
+            var f = 0f;
+            var d = 0d;
+            var m = 0m;
+            var u = 0u;
+            var l = 0l;
+            var ul = 0ul;
 
-            // 3. Initialization {<datatype> <identifire> = < Initial Value>
-            int num2 = 7;
+            int onemillion = 1_000_000;
 
-            //string  Refrence Type 
-            string s1;
-            s1 = "Younis";
+            var result = 200 / 3.0;
 
-            string s2 = "Y.";
+            //dynamic
+            dynamic x = 9;
+            x = "abc";
+            x = 10m;
 
-            //Regular concatination {plus sign}
-            string s3 = s1 + " " + s2;
-            //Console.WriteLine(s3);
+            char letter = 'A';
+            Console.WriteLine(letter);
 
-            string s4 = $"{s1} {s2}";
-            //Console.WriteLine(s4);
-            //---------------------------------------
+            //------------------------- For Example ----------------------
+            var id = 1000;
+            var fname = "Younis";
+            var lname = "Y.";
+            var salary = 1000d;
+            var gender = 'M';
+            var address = "Libya, Tripoli";
 
-            //Limit Value Type
-            Console.WriteLine();
-            Console.WriteLine($"byte    [Min {byte.MinValue}]    ==> [Max {byte.MaxValue}]");
-            Console.WriteLine($"short   [Min {short.MinValue}]   ==> [Max {short.MaxValue}]");
-            Console.WriteLine($"Ushort  [Min {ushort.MinValue}]  ==> [Max {ushort.MaxValue}]");
-            Console.WriteLine($"int     [Min {int.MinValue}]     ==> [Max {int.MaxValue}]");
-            Console.WriteLine($"uint    [Min {uint.MinValue}]    ==> [Max {uint.MaxValue}]");
-            Console.WriteLine($"long    [Min {long.MinValue}]    ==> [Max {long.MaxValue}]");
-            Console.WriteLine($"ulong   [Min {ulong.MinValue}]   ==> [Max {ulong.MaxValue}]");
-                                       
-            Console.WriteLine($"float   [Min {float.MinValue}]   ==> [Max {float.MaxValue}]");
-            Console.WriteLine($"double  [Min {double.MinValue}]  ==> [Max {double.MaxValue}]");
-            Console.WriteLine($"decimal [Min {decimal.MinValue}] ==> [Max {decimal.MaxValue}]");
-
-
+            Console.WriteLine("Employee");
+            Console.WriteLine("--------");
+            Console.WriteLine($"Id: ${id}");
+            Console.WriteLine($"Name: {fname} {lname}");
+            Console.WriteLine($"Salary: ${salary}");
+            Console.WriteLine($"Gender: {gender}");
+            Console.WriteLine($"Address:{address}");
         }
-
-
     }
 }
